@@ -1,0 +1,25 @@
+{
+  "name": "picture-in-picture-extension",
+  "version": "0.0.0",
+  "description": "任意の要素をPinPにします。",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack -w",
+    "clean": "rimraf dist"
+  },
+  "author": "Shuntaro Nishizawa <me@shun.technology> (https://github.com/shun-shobon)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/chrome": "^0.0.133",
+    "copy-webpack-plugin": "^8.0.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
+  }
+}

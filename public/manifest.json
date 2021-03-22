@@ -1,0 +1,23 @@
+{
+  "name": "picture in picture",
+  "short_name": "PinP",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "任意の要素をPinPにします。",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "picture in picture"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/index.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background/index.js"]
+  }
+}
